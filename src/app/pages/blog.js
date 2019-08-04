@@ -1,10 +1,9 @@
 import * as React from "react";
 import App from "../components/App";
-import Bloga from "../components/Bloga";
+import Blog from "../components/Blog";
 
 export default () => (
   <App>
-    kyuuuuuuuuu
-    <Bloga />
+    <Blog />
   </App>
 );
