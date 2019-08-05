@@ -9,9 +9,9 @@ const Header = ({ pathname }) => (
     <Link href="/about">
       <a className={pathname === "/about" ? "is-active" : ""}>About</a>
     </Link>
-    <Link href="/blog">
+    {/* <Link href="/blog">
       <a className={pathname === "/blog" ? "is-active" : ""}>Blog</a>
-    </Link>
+    </Link> */}
   </header>
 );
 
