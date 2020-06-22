@@ -3,6 +3,6 @@ import App from "../components/App";
 
 export default () => (
   <App>
-    <p>Welcome to justineder.com - yo</p>
+    <p>Welcome to justineder.com - you know now how it works</p>
   </App>
 );
