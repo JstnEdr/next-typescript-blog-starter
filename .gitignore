@@ -4,3 +4,4 @@ src/app/.next
 # Firebase cache
 .firebase/
 node_modules
+creds
