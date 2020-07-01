@@ -1,0 +1,40 @@
+ classDiagram
+      App --* API
+      App --* AuthCtx
+      App --* Page
+      App --* DataCtx
+      AuthCtx ..> API
+      DataCtx ..> API
+      Page --o PageBase
+      PageBase --o View
+      PageBase --* View
+      PageBase ..> AuthCtx
+      PageBase --o Layout
+      Page --* View
+      Container --* Component
+      View ..> DataCtx
+      View ..> AuthCtx
+      View --* Container
+      View --o Queries
+      View --o Mutations
+      Component --o UI
+      
+      View
+
+
+      App : +String gender
+      App: +isMammal()
+      App: +mate()
+      class AuthCtx{
+          +String beakColor
+          +swim()
+          +quack()
+      }
+      class DataCtx{
+          -int sizeInFeet
+          -canEat()
+      }
+      class Page{
+          +bool is_wild
+          +run()
+      }

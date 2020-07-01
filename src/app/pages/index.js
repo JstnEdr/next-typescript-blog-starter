@@ -1,8 +1,9 @@
 import * as React from "react";
-import App from "../components/App";
+import { AppShell } from "../components/AppShell";
 
 export default () => (
-  <App>
+  <AppShell>
     <p>Welcome to justineder.com - you know now how it works</p>
-  </App>
+    <div className="yo">I'm red</div>
+  </AppShell>
 );
