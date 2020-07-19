@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./layouts/Header";
-import Document from "../posts/2019/20190531_my-journey.mdx";
+import Header from "../../components/layouts/Header";
+import Document from "../../posts/draft.mdx";
 
 const H1 = (props) => <h1 style={{ color: "tomato" }} {...props} />;
 const InlineCode = (props) => (
@@ -11,7 +11,7 @@ const Code = (props) => (
 );
 const Pre = (props) => <pre id="codes" style={{ color: "red" }} {...props} />;
 
-const Blog = ({ children }) => (
+const BlogList = ({ children }) => (
   <main>
     <Document
       components={{ h1: H1, pre: Pre, code: Code, inlineCode: InlineCode }}
@@ -19,4 +19,4 @@ const Blog = ({ children }) => (
   </main>
 );
 
-export default Blog;
+export default BlogList;

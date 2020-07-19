@@ -1,5 +1,5 @@
 import "../styles/global.css";
-import { AppShell } from "../components/layouts/AppShell";
+import { AppShell } from "../components/AppShell";
 // import Container from "next";
 
 // // This default export is required in a new `pages/_app.js` file.
@@ -11,10 +11,9 @@ const NextApp = (props) => {
   const { Component, ...pageProps } = props;
   return (
     <AppShell>
+      {/* <Component title="Here?" description="ummmm" {...pageProps} /> */}
       <Component {...pageProps} />
-      <div className="yo">yoyooyo</div>
     </AppShell>
-    // <Component {...pageProps} />
   );
 };
 

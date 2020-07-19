@@ -4,7 +4,6 @@ import { AppShell } from "../components/AppShell";
 export default () => (
   <React.Fragment>
     <p>Welcome to justineder.com - you know now how it works</p>
-    <div className="yo">I'm red</div>
   </React.Fragment>
 );
 
@@ -20,7 +19,8 @@ export default () => (
 //       siteDescription={props.description}
 //     >
 //       <section>
-//         <BlogList allBlogs={props.allBlogs} />
+//         hi
+//         {/* <BlogList allBlogs={props.allBlogs} /> */}
 //       </section>
 //     </Layout>
 //   );

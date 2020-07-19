@@ -1,5 +1,5 @@
-import Header from "./Header";
-import Meta from "./Meta";
+import Header from "./layouts/Header";
+import Meta from "./layouts/Meta";
 
 export default function Layout(props) {
   return (
