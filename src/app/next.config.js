@@ -39,6 +39,8 @@ module.exports = (phase, { defaultConfig }) => {
     options: {
       remarkPlugins: [images, emoji],
     },
+    // allows for firebas deployment
+    distDir: "../../dist/functions/next",
   });
 
   return withFonts(
