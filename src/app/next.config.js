@@ -39,7 +39,7 @@ module.exports = (phase, { defaultConfig }) => {
     options: {
       remarkPlugins: [images, emoji],
     },
-    // allows for firebas deployment
+    // allows for firebase function deployment
     distDir: "../../dist/functions/next",
   });
 
