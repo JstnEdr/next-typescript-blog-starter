@@ -1,8 +1,3 @@
 import * as React from "react";
-import App from "../components/App";
 
-export default () => (
-  <App>
-    <p>Yeah, that's about it for now</p>
-  </App>
-);
+export default () => <p>Yeah, that's about it for now</p>;

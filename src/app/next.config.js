@@ -2,7 +2,7 @@ const withMDX = require("@next/mdx")();
 
 module.exports = withMDX({
   distDir: "../../dist/functions/next",
-  pageExtensions: ["mdx", "jsx", "js"]
+  pageExtensions: ["mdx", "jsx", "js"],
 });
 
 // const images = require("remark-images");
