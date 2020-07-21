@@ -5,9 +5,9 @@ on:
       # Push events on master branch
       - master
       # Push events to branches matching refs/heads/mona/octocat
-      - "mona/octocat"
+      - 'mona/octocat'
       # Push events to branches matching refs/heads/releases/10
-      - "releases/**"
+      - 'releases/**'
     # Sequence of patterns matched against refs/tags
     tags:
       - v1 # Push events to v1 tag
@@ -34,7 +34,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Build
-        run: npm run predeploy
+        run: npm run build
       # - name: Archive Production Artifact
       #   uses: actions/upload-artifact@master
       #   with:
@@ -43,7 +43,7 @@ jobs:
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
-          args: deploy
+          args: deploy --only functions,hosting
         env:
           GCP_SA_KEY: ${{ secrets.GA64_GCP }}
   # deploy:
