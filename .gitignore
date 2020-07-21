@@ -5,4 +5,5 @@ src/app/.next
 .firebase/
 node_modules
 creds
-REF/
+./REF/
+.next
