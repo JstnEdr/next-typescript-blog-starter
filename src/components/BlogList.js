@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './layouts/Header';
+import Header from './Header';
 import Document from '../posts/draft.mdx';
 
 const H1 = (props) => <h1 style={{ color: 'tomato' }} {...props} />;
