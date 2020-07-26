@@ -2,6 +2,8 @@ on:
   push:
     # Sequence of patterns matched against refs/heads
     branches:
+      # TODO: deploy to a different space in Firebase
+      # - develop
       # Push events on master branch
       - master
       # Push events to branches matching refs/heads/mona/octocat

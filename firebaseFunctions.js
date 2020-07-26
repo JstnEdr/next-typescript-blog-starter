@@ -5,13 +5,16 @@ const { https } = require('firebase-functions');
 const { default: next } = require('next');
 
 const isDev = process.env.NODE_ENV !== 'production';
-const nextjsDistDir = join('src', require('./src/next.config.js').distDir);
+
+// TODO how to use the distDir from next.config
+// const nextjsDistDir = join('src', require('./next.config.js').distDir);
 // const nextjsDistDir = join('src', '.next');
 
 const nextjsServer = next({
   dev: isDev,
   conf: {
-    distDir: nextjsDistDir,
+    // distDir: nextjsDistDir,
+    distDir: './.next',
   },
 });
 const nextjsHandle = nextjsServer.getRequestHandler();
