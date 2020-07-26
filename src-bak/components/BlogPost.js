@@ -16,7 +16,7 @@ export default function Layout(props) {
         siteDescription={props.siteDescription}
       />
 
-      <Header siteTitle={props.siteTitle} />
+      {/* <Header siteTitle={props.siteTitle} /> */}
       <div className="content">{props.children}</div>
       {/* <style jsx>
         {`

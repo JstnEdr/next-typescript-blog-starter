@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../components/layouts/Header';
+import Header from '../../components/Header';
 import Document from '../../posts/draft.mdx';
 
 export const meta = {
