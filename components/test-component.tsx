@@ -3,14 +3,14 @@ import Post from '../types/post'
 
 type Props = {}
 
-const Test = () => {
+const TestComponent = () => {
   return (
     <section>
       <div>
-        HELLO TEST
+        HELLO TEST REACT
       </div>
     </section>
   )
 }
 
-export default Test
+export default TestComponent
