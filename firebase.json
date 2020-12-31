@@ -10,7 +10,7 @@
     ]
   },
   "functions": {
-    "runtime": "nodejs10",
+    "runtime": "nodejs14",
     "source": ".",
     "predeploy": [
       // "npm --prefix \"$PROJECT_DIR\" install",
