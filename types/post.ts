@@ -12,6 +12,7 @@ type PostType = {
   };
   content: string;
   published: boolean;
+  draft?: boolean;
 };
 
 export default PostType;

@@ -9,12 +9,9 @@ import { getPostBySlug, getAllPosts } from '../../lib/api';
 import PostTitle from '../../components/post-title';
 import Head from 'next/head';
 import { CMS_NAME } from '../../lib/constants';
-import markdownToHtml from '../../lib/markdownToHtml';
 import PostType from '../../types/post';
-import dynamic from 'next/dynamic';
 import hydrate from 'next-mdx-remote/hydrate';
 import renderToString from 'next-mdx-remote/render-to-string';
-import H1 from '../../components/mdx/H1';
 import components from '../../components/mdx';
 
 type Props = {
