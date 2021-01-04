@@ -1,0 +1,68 @@
+on:
+  push:
+    # Sequence of patterns matched against refs/heads
+    branches:
+      # TODO: deploy to a different space in Firebase
+      # - develop
+      # Push events on master branch
+      - master
+      # Push events to branches matching refs/heads/mona/octocat
+      - 'mona/octocat'
+      # Push events to branches matching refs/heads/releases/10
+      - 'releases/**'
+    # Sequence of patterns matched against refs/tags
+    tags:
+      - v1 # Push events to v1 tag
+      - v1.* # Push events to v1.0, v1.1, and v1.9 tags
+jobs:
+  hello_github_actions:
+    name: My Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a greeting
+        env:
+          MY_VAR: Hi there! My name isz
+          FIRST_NAME: Mona
+          MIDDLE_NAME: The
+          LAST_NAME: Octocat
+        run: |
+          echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+      - name: Install Dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      # - name: Archive Production Artifact
+      #   uses: actions/upload-artifact@master
+      #   with:
+      #     name: dist
+      #     path: dist
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only functions,hosting
+        env:
+          GCP_SA_KEY: ${{ secrets.GA64_GCP }}
+  # deploy:
+  #   name: Deploy
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout Repo
+  #       uses: actions/checkout@master
+  #     - name: Download Artifact
+  #       uses: actions/download-artifact@master
+  #       with:
+  #         name: dist
+  #         path: dist
+  #     - name: Deploy to Firebase
+  #       uses: w9jds/firebase-action@master
+  #       with:
+  #         args: deploy
+  #       env:
+  #         GCP_SA_KEY: ${{ secrets.GA64_GCP }}
