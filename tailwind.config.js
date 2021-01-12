@@ -1,6 +1,6 @@
 module.exports = {
   purge: ['./src/components/**/*.tsx', './src/pages/**/*.tsx'],
-  darkMode: 'media', // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
