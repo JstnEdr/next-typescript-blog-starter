@@ -13,7 +13,6 @@ To create the blog posts we use [`remark`](https://github.com/remarkjs/remark) a
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?c=1&s=https://github.com/JstnEdr/next-typescript-blog-starter)
 
-
 **Option 2:** Clone this repository if you have your own plan for deploying
 
 or simply click the [Use This Template](https://github.com/JstnEdr/next-typescript-blog-starter/generate) button above. 
