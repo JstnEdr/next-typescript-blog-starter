@@ -1,7 +1,6 @@
 {
   "name": "blog-starter-typescript",
   "version": "1.0.0",
-  "main": "firebaseFunctions.js",
   "scripts": {
     "dev": "next",
     "dev:watch": "next-remote-watch ./",
